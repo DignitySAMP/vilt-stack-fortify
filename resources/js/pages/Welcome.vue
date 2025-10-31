@@ -26,7 +26,7 @@ const form = useForm();
                     </Link>
                 </div>
                 <div v-else>
-                    <Link :href="route('two-factor.enable')" method="POST" class="px-4 py-2 transition duration-300 border-stone-700 bg-stone-800 hover:bg-stone-700 text-stone-200 rounded-md w-fit" view-transition>
+                    <Link :href="route('two-factor.setup')" class="px-4 py-2 transition duration-300 border-stone-700 bg-stone-800 hover:bg-stone-700 text-stone-200 rounded-md w-fit" view-transition>
                         2FA
                     </Link>
                  

@@ -8,7 +8,9 @@ Route::get('/', function (): mixed {
 })->name('home');
 
 
-Route::get('/protected', function() {
+Route::get('/user/two-faction-setup', function() {
 
-    return Inertia::render(component: 'Welcome');
-})->middleware(['auth', 'verified', 'password.confirm'])->name('protected');
+    return Inertia::render( 'auth/TwoFactorSetup', [
+        'mfa_enabled' => Auth::user()->two_factor_confirmed_at !== null
+    ]);
+})->middleware(['auth', 'verified', 'password.confirm'])->name('two-factor.setup');
