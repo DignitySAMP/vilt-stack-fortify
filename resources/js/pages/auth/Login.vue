@@ -7,13 +7,11 @@
                 <span v-if="form.errors.email" v-html="form.errors.email" class="text-sm text-red-700"/>
             </div>
 
-
             <div class="flex flex-col gap-2">
                 <label class="text-sm text-gray-700" for="password">Password</label>
                 <input type="password" name="password" id="password" v-model="form.password" autocomplete="password" class="border border-gray-200 shadow px-4 py-1 rounded focus:outline-4 outline-gray-600/50"/>
                 <span v-if="form.errors.password" v-html="form.errors.password" class="text-sm text-red-700"/>
             </div>
-
 
             <div class="flex items-center gap-2">
                 <input type="checkbox" name="remember" id="remember" v-model="form.remember" autocomplete="remember" class="size-4 checked:accent-gray-500"/>
@@ -21,7 +19,6 @@
             </div>
 
             <div class="flex justify-between text-gray-600 text-sm">
-
                 <Link :href="route('register')" class="hover:underline" view-transition>
                     Don't have an account yet?
                 </Link>

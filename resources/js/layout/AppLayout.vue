@@ -11,8 +11,6 @@
     <footer class="mt-2 w-full flex justify-center text-sm text-gray-400">
         All rights reserved. Footer goes here.
     </footer>
-
-
 </template>
 <script setup lang="js">
     import { Link } from '@inertiajs/vue3';

@@ -18,7 +18,6 @@
                 </button>
             </div>
 
-
             <div class="flex justify-end text-gray-600 text-sm">
                 <span click="form.post(route('logout'))" class="hover:underline">
                     Log out
@@ -29,7 +28,7 @@
 
 </template>
 <script setup lang="js">
-import AppLayout from '@/layout/AppLayout.vue'
 import { useForm, usePage } from '@inertiajs/vue3';
+import AppLayout from '@/layout/AppLayout.vue'
 const form = useForm();
 </script>

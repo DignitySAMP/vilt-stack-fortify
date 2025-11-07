@@ -21,8 +21,8 @@
     </AppLayout>
 </template>
 <script setup lang="js">
-    import AppLayout from '@/layout/AppLayout.vue';
     import { useForm } from '@inertiajs/vue3';
+    import AppLayout from '@/layout/AppLayout.vue';
 
     const form = useForm({
         password: '',

@@ -13,13 +13,11 @@
                 <span v-if="form.errors.email" v-html="form.errors.email"  class="text-sm text-red-700"/>
             </div>
 
-
             <div class="flex flex-col gap-2">
                 <label for="password" class="text-sm text-gray-700">Password</label>
                 <input type="password" name="password" id="password" v-model="form.password" autocomplete="password"  class="border border-gray-200 shadow px-4 py-1 rounded focus:outline-4 outline-gray-600/50"/>
                 <span v-if="form.errors.password" v-html="form.errors.password"  class="text-sm text-red-700"/>
             </div>
-
 
             <div class="flex flex-col gap-2">
                 <label for="password_confirmation" class="text-sm text-gray-700">Password Confirmation</label>
@@ -39,13 +37,11 @@
                 </button>
             </div>
         </form>
-
     </AppLayout>
 </template>
 <script setup lang="js">
-import AppLayout from '@/layout/AppLayout.vue';
 import { useForm, Link } from '@inertiajs/vue3';
-
+import AppLayout from '@/layout/AppLayout.vue';
 
 const form = useForm({
     name: '',
@@ -62,5 +58,4 @@ const submit = () => {
         onFinish: () => form.reset()
     });
 }
-
 </script>

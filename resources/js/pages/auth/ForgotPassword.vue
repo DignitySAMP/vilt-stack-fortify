@@ -37,7 +37,7 @@
 
     const form = useForm({
         email: '',
-    })
+    });
 
     const submit = () => {
         form.post(route('password.email'), {

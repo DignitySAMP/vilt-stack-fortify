@@ -25,12 +25,12 @@ const form = useForm();
                         Register
                     </Link>
                 </div>
-                <div v-else>
-                    <Link :href="route('two-factor.setup')" class="px-4 py-2 transition duration-300 border-stone-700 bg-stone-800 hover:bg-stone-700 text-stone-200 rounded-md w-fit" view-transition>
-                        2FA
+                <div v-else class="flex gap-4">
+                    <Link :href="route('two-factor.setup')" as="button" class="px-4 py-2 transition duration-300 border-stone-700 bg-stone-800 hover:bg-stone-700 text-stone-200 rounded-md w-fit" view-transition>
+                        Manage 2FA
                     </Link>
                  
-                    <Link :href="route('logout')" method="POST" class="px-4 py-2 transition duration-300 border-stone-700 bg-stone-800 hover:bg-stone-700 text-stone-200 rounded-md w-fit">
+                    <Link :href="route('logout')" method="POST" class="px-4 py-2 transition duration-300 border-stone-700 bg-stone-800 hover:bg-stone-700 text-stone-200 rounded-md w-fit" view-transition>
                         Log out
                     </Link>
                 </div>

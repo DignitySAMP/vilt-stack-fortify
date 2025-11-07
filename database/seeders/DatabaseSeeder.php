@@ -18,9 +18,9 @@ class DatabaseSeeder extends Seeder
         // User::factory(10)->create();
 
         User::factory()->create([
-            'name' => 'Webteam Datalink',
-            'email' => 'webteam@datalink.be',
-            'password' => Hash::make('webteam@datalink.be')
+            'name' => 'Test User',
+            'email' => 'test@example.com',
+            'password' => Hash::make('test@example.com')
         ]);
     }
 }

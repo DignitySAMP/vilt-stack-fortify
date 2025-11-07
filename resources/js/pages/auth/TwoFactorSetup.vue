@@ -64,7 +64,6 @@ import { useForm, usePage } from '@inertiajs/vue3';
 import axios from 'axios';
 import AppLayout from '@/layout/AppLayout.vue';
 
-
 const form = useForm({
     code: '',
 });
@@ -125,6 +124,4 @@ const submitDisable = () => {
         },
     });
 };
-
 </script>
-

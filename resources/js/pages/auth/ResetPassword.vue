@@ -28,9 +28,8 @@
     </AppLayout>
 </template>
 <script setup lang="js">
-
-import AppLayout from '@/layout/AppLayout.vue';
 import { useForm } from '@inertiajs/vue3';
+import AppLayout from '@/layout/AppLayout.vue';
 
 const props = defineProps({
     token: {
@@ -41,9 +40,7 @@ const props = defineProps({
         type: String,
         required: true
     },
-    
-})
-
+});
 
 const form = useForm({
     email: props.email, 
@@ -59,5 +56,4 @@ const submit = () => {
         onFinish: () => form.reset()
     });
 }
-
 </script>
