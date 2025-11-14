@@ -11,7 +11,9 @@
 
 ## What is it?
 
-This is an extension to the [vilt stack starter kit](https://github.com/DignitySAMP/vilt-stack) that I maintain with Laravel Fortify preinstalled as well as using the recommended methodology for form control and Vue components and layouts, remniscent of the old Vue Breeze starterkit.
+This is an extension to the [vilt stack starter kit](https://github.com/DignitySAMP/vilt-stack) that I maintain with Laravel Fortify preinstalled as well as using the recommended methodology for form control and Vue components and layouts, remniscent of the old Vue Breeze starter kit.
+
+> If you would like a version with TypeScript preinstalled and preconfigured, [click here](https://github.com/DignitySAMP/vilt-stack-fortify-ts).
 
 What's included (out of the box):
  - Registration
